@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to the user recording page.
+  p#output
+  // > Stop and Record buttons<!
+  button#record(type='button') Record
+  button#stop(type='button') Stop Recording
+  script(src='../javascripts/recordVoiceScript.js')

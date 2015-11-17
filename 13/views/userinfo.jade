@@ -1,0 +1,37 @@
+extends layout
+
+block content
+	fieldset
+		legend
+			h3 Gender
+		select#gender(required='')
+			option.placeholder(selected='', disabled='', value='') Select Gender
+			option(value='male') Male
+			option(value='female') Female
+			option(value='other') Other
+			option(value='0') Don't want to disclose
+	fieldset
+		legend
+			h3 Age-range
+		select#age(required='')
+			option.placeholder(selected='', disabled='', value='') Select age-range
+			option(value='age1') 18-24
+			option(value='age2') 25-34
+			option(value='age3') 35-44
+			option(value='age4') 45-54
+			option(value='age5') 55-64
+			option(value='age6') 65+
+			option(value='0') Don't want to disclose
+
+	fieldset
+		legend
+			h3 Accent that you most identify with
+		select#accent(required='')
+			option.placeholder(selected='', disabled='', value='') Select Accent
+			option(value='accent1') Accent1
+			option(value='accent2') Accent2
+			option(value='accent3') Accent3
+			option(value='0') Don't want to disclose
+
+	button(onclick="storeCookies(); window.location='/voicerecord'") Continue >>
+	script(src='../javascripts/storeCookies.js')  

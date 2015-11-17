@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  fieldset
+    legend
+      h1= title
+    h1#sentence
+    p#output
+    fieldset
+        progress(min='0', max='100', value='0') 0% complete
+        br
+        // > Stop and Record buttons<!
+        button#record(type='button') Record
+        br
+        button#stop(type='button') Stop Recording & Upload!
+    script(src='../javascripts/randomSentence.js')
+    script(src='../javascripts/recordVoiceScript.js')
+    script(src='../javascripts/pushdata.js')
+    

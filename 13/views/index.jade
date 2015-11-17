@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	fieldset
+		legend
+			h1=title
+		p Welcome to #{title}
+		p<b><u>Instructions:</b></u> 
+		p On the next screen you will enter your gender and the kind of accent that you identify with the most. Choose the <b>'Don't want to disclose'</b> option if you don't want to disclose this information.
+		p Next, you will be shown a sentence to read; hit Record button while saying the sentence in your normal voice
+		p Try not to make any mistakes but don't worry too much if you make some!
+
+		button(onclick="window.location='/userinfo'") Continue >>

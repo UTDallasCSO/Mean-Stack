@@ -1,0 +1,15 @@
+{
+  "name": "express-example",
+  "version": "1.0.0",
+  "description": "A simple example for using express.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gaurav",
+  "license": "MIT"
+}
